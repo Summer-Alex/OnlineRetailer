@@ -1,0 +1,7 @@
+由左到右，由深到浅
+红：ED8180          F0D5D5
+绿：9ED4C6          D1EBEF
+橙：F4A986           F1D3C7
+蓝：A6C5DC          DDECF9
+红：同上
+紫：C18EBE           F1CDE1

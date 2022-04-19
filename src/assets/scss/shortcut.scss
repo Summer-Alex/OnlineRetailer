@@ -1,0 +1,4 @@
+
+/*清浮动及解决BFC问题*/
+.clearfix:after,.clearfix:before{content:''; display: table;}
+.clearfix:after{ clear: both;}

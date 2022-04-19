@@ -1,0 +1,135 @@
+import Vue from 'vue'
+import VueRouter from 'vue-router';//引入包
+
+
+Vue.use(VueRouter)//将插件依赖于Vue中
+
+
+const routes=[
+    {
+        path:'/',
+        component:()=>import('@/views/load/enter.vue')
+    },
+    {
+        path:'/load',
+        component:()=>import('@/views/load/load.vue')
+    },
+    {
+        path:'/normalRegister',
+        component:()=>import('@/views/load/normalRegister.vue')
+    },
+    {
+        path:'/shopRegister',
+        component:()=>import('@/views/load/shopRegister.vue')
+    },
+    {
+        path:'/identity',
+        component:()=>import('@/views/load/identity.vue')
+    },
+    {
+        path:'/watch',
+        component:()=>import('@/views/home/watch.vue')
+    },
+    {
+        path:'/listen',
+        component:()=>import('@/views/home/listen.vue')
+    },
+    {
+        path:'/song',
+        component:()=>import('@/views/village/song/song.vue')
+    },
+    {
+        path:'/new',
+        component:()=>import('@/views/village/song/new.vue')
+    },
+    {
+        path:'/hot',
+        component:()=>import('@/views/village/song/hot.vue')
+    },
+    {
+        path:'/singRoom',
+        component:()=>import('@/views/village/song/singRoom.vue')
+    },
+    {
+        path:'/listenRoom',
+        component:()=>import('@/views/village/song/listenRoom.vue')
+    },
+    {
+        path:'/village',
+        component:()=>import('@/views/village/village.vue')
+    },
+    {
+        path:'/villageDetail',
+        component:()=>import('@/views/village/villageDetail.vue')
+    },
+    {
+        path:'/shop',
+        component:()=>import('@/views/shop/shop.vue')
+    },
+    {
+        path:'/shopFirst',
+        component:()=>import('@/views/shop/shopFirst.vue')
+    },
+    {
+        path:'/shopCart',
+        component:()=>import('@/views/shop/shopCart.vue')
+    },
+    {
+        path:'/myPage',
+        component:()=>import('@/views/myPage/myPage.vue')
+    },
+    {
+        path:'/coin',
+        component:()=>import('@/views/myPage/coin.vue')
+    },
+    {
+        path:'/coin',
+        component:()=>import('@/views/myPage/coin.vue')
+    },
+    {
+        path:'/communicate',
+        component:()=>import('@/views/myPage/communicate.vue')
+    },
+    {
+        path:'/communicateList',
+        component:()=>import('@/views/myPage/communicateList.vue')
+    },
+    {
+        path:'/contribute',
+        component:()=>import('@/views/myPage/contribute.vue')
+    },
+    {
+        path:'/shopImformation',
+        component:()=>import('@/views/myPage/shopImformation.vue')
+    },
+    {
+        path:'/listenDetail',
+        component:()=>import('@/views/home/play/listenDetail.vue')
+    },
+    {
+        path:'/songDetail',
+        component:()=>import('@/views/home/play/songDetail.vue')
+    },
+    {
+        path:'/vedio',
+        component:()=>import('@/views/home/play/vedio.vue')
+    },
+    {
+        path:'/businessMain',
+        component:()=>import('@/views/business/main.vue')
+    },
+    {
+        path:'/businessCart',
+        component:()=>import('@/views/business/cart.vue')
+    },
+    {
+        path:'/businessInformation',
+        component:()=>import('@/views/business/information.vue')
+    },
+    ]
+const router = new VueRouter({
+    routes,//等价routes: routes
+    mode: 'history',
+});
+
+export default router;
